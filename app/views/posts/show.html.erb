@@ -1,2 +1,7 @@
 <h1>詳細</h1>
-
+<%= link_to "一覧表示", posts_path %>
+<div>
+<p>タイトル: <%= @post.title %></p>
+<p>内容: <%= @post.content %></p>
+<p>作成日: <%= @post.created_at %></p>
+</div>

@@ -1,3 +1,8 @@
-<h1>詳細</h1>
+<h1>編集</h1>
+<%= form_with model: @post, local: true do |form| %>
+  <p><%= form.label :title, "タイトル" %> <%= form.text_field :title %></p>
+  <p><%= form.label :content, "内容" %> <%= form.text_field :content %></p>
+  <p><%= form.submit "更新" %></p>
+<% end %>
 
 
